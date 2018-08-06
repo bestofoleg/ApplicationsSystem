@@ -123,6 +123,8 @@ namespace Applications.Controllers
                 {
                     application.ItemID = counter + 1;
 
+                    //Add comment
+
                     List<Application> appsList = this.database.Applications.ToList();
 
                     if (appsList.Count > 0)
