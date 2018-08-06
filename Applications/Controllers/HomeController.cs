@@ -104,6 +104,8 @@ namespace Applications.Controllers
         public ActionResult GetReport(List<string> date)
         {
             List<Application> apps = this.database.Applications.ToList();
+
+            //New comment
             
             List<Application> sorted_apps = 
                 apps.FindAll(x => (x.Date.Month == int.Parse(date[0]) && x.Date.Year == int.Parse(date[1])));

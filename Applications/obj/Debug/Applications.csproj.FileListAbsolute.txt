@@ -99,3 +99,4 @@ C:\Users\Oleg\source\repos\Applications\Applications\obj\Debug\Applications.cspr
 C:\Users\Oleg\source\repos\Applications\Applications\obj\Debug\Applications.csproj.CopyComplete
 C:\Users\Oleg\source\repos\Applications\Applications\obj\Debug\Applications.dll
 C:\Users\Oleg\source\repos\Applications\Applications\obj\Debug\Applications.pdb
+C:\Users\Oleg\source\repos\Applications\Applications\obj\Debug\Applications.csprojAssemblyReference.cache
