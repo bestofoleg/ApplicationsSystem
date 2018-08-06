@@ -1,0 +1,29 @@
+﻿@model List<string>
+@{
+    ViewBag.Title = "Поиск по дате";
+    Html.BeginForm("GetReport", "Home", FormMethod.Post);
+}
+
+
+
+<div class="task">
+
+    <h1>Поиск заявок по дате.</h1><br /><br />
+
+    @{ 
+        Model.Add(" ");
+        Model.Add(" ");
+    }
+    Месяц:
+    @Html.TextBoxFor(x => Model[0])
+    Год:
+    @Html.TextBoxFor(x => Model[1])
+    <br />
+
+
+    <button type="submit">
+        Найти
+    </button>
+
+
+</div>

@@ -1,0 +1,60 @@
+﻿@model List<Applications.Models.Application>
+@{
+    ViewBag.Title = "Система заявок на стандартный инвентарь";
+    Html.BeginForm("SendApplication", "Home", FormMethod.Post);
+}
+
+<div class="task">
+
+    <h1>Добавление заявки</h1><br /><br />
+
+    <label>Стулья</label>
+    @{
+        Model.Add(new Applications.Models.Application());
+        Model[0].ItemID = 1;
+    }
+    @Html.TextBoxFor(x => x[0].Count)
+    @Html.TextBoxFor(x => x[0].Comment)
+    <br />
+
+    <label>Столы</label>
+    @{
+        Model.Add(new Applications.Models.Application());
+        Model[1].ItemID = 2;
+    }
+    @Html.TextBoxFor(x => x[1].Count)
+    @Html.TextBoxFor(x => x[1].Comment)
+    <br />
+
+    <label>Калькуляторы</label>
+    @{
+        Model.Add(new Applications.Models.Application());
+
+    }
+    @Html.TextBoxFor(x => x[2].Count)
+    @Html.TextBoxFor(x => x[2].Comment)
+    <br />
+
+    <label>Вёдра</label>
+    @{
+        Model.Add(new Applications.Models.Application());
+        Model[3].ItemID = 4;
+    }
+    @Html.TextBoxFor(x => x[3].Count)
+    @Html.TextBoxFor(x => x[3].Comment)
+    <br />
+
+    <label>Веники</label>
+    @{
+        Model.Add(new Applications.Models.Application());
+        Model[4].ItemID = 5;
+    }
+    @Html.TextBoxFor(x => x[4].Count)
+    @Html.TextBoxFor(x => x[4].Comment)
+    <br /><br />
+
+    <button type="submit">
+        Добавить заявку
+    </button>
+
+</div>
